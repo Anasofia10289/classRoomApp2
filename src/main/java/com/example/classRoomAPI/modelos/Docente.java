@@ -2,10 +2,12 @@ package com.example.classRoomAPI.modelos;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 
 import java.util.List;
 
+@Entity
 public class Docente {
 
     @Column(name="id_docente")
