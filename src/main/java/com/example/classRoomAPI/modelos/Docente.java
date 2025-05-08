@@ -1,9 +1,7 @@
 package com.example.classRoomAPI.modelos;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -11,6 +9,8 @@ import java.util.List;
 public class Docente {
 
     @Column(name="id_docente")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private  String especialidad;
 

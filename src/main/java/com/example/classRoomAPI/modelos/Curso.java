@@ -17,7 +17,7 @@ public class Curso {
 
     //Creando relacion (muchos a 1)
     @ManyToOne
-    @JoinColumn(name="fk_docente", referencedColumnName = "id")
+    @JoinColumn(name="fk_docente", referencedColumnName = "id_docente")
     @JsonBackReference
     private Docente docente;
 
